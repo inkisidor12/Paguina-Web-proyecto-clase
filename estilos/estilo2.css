@@ -1,0 +1,139 @@
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+
+.image-container img {
+    width: 150px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: auto;
+    margin: 10px;
+    border: 10px solid #ddd; /* Añade un borde para separar las imágenes */
+    border-radius: 5px; /* Agrega bordes redondeados si lo deseas */
+    color: #FFFBF5;
+    transition: transform 0.3s; /* NUEVO*/
+}
+
+.image-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* NUEVO */
+.image-container .jorge {
+  flex: 0 0 calc(25%-20px); /* Ajusta el ancho de las imágenes según tus necesidades */
+  margin: 10px;
+  text-align: center;
+}
+.image-container .jorge:hover img {
+  transform: scale(1.2);
+  filter: grayscale(0%) brightness(100%);
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #53212B;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Aqui para que gire las imagenes*/
+.flip-box {
+    position: relative;
+    background-color: transparent;
+    width: 400px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: #bbb;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /* aqui las clases para que se hagan grandes y se muevan*/
+  .item:hover{
+    scale: 1.2;
+
+  }
+  
+
+  /*prueba de de los logos*/
+  .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }

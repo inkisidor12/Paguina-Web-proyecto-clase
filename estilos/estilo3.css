@@ -1,0 +1,52 @@
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+input, textarea {
+    width: 85%;
+    padding: 8px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+}
+
+
+
+select{
+    width: auto;
+
+}
+
+button {
+    background-color: #BD3944;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FD4556;
+}
+
+
+.jorge {
+    transition: filter 300ms;
+    text-align: center;
+}
+
+.profile:hover .jorge:not(:hover) {
+    filter: grayscale(100%) brightness(50%);
+}
